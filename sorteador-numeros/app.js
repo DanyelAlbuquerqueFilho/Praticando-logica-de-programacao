@@ -10,6 +10,10 @@ function sortear(){
             alert("A quantidade de números a serem sorteados não pode ser maior que o intervalo definido.");
             return;
         }
+        if(de >= ate) {
+            alert('Campo "Do número" deve ser inferior ao compo "Até o número". Verifique e tente novamente!');
+            return;
+        }
 
         numero = obterNumeroAleatorio(de, ate);
 
